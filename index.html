@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rokkitt:wght@200&family=Tinos&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+    <title>Immerse Travel</title>
+  </head>
+  <body style="width: 900px;">
+    <div class="kontainer">
+      <div style="display:inline-flex; width: 100%;">
+        <div style="width: 50%;display:flex;">
+          <img src="./asset/Picture1.png" class="logo">
+        </div>
+        <div style="width: 50%;display:flex; justify-content: flex-end;">
+          <div class="menu-flex">
+            <div class="flex align-item-center justify-content-center menu-nav menu-nav-first" style="padding: 0 8px; height: 60%;">
+              <a href="#home" class="menu flex align-item-center" style="width: 100%; height: 100%; padding: 0px 8px;"><b>Home</b></a>
+            </div>
+            <div class="flex align-item-center justify-content-center menu-nav" style="height: 60%; border-left-width: 0 !important; border-right: 0 !important;">
+              <a href="#package" class="menu flex align-item-center" style="width: 100%; height: 100%; padding: 0px 8px;"><b>Our Package</b></a>
+            </div>
+            <div class="flex align-item-center justify-content-center menu-nav menu-nav-last" style="height: 60%;">
+              <a href="#contact" class="menu flex align-item-center" style="width: 100%; height: 100%; padding: 0 8px;"><b>Contact Us</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="home" class="kontainer">
+      <div class="full-width flex align-item-center justify-content-center">
+        <h1 class="subtitle">
+          <b>Immerse Travel</b>
+        </h1>
+      </div>
+    </div>
+    </div>
+    <div class="kontainer">
+      <div class="full-width flex align-item-center justify-content-center">
+        <div style="width: 400px;">
+          <h3 class="motto">Immerse yourself in the experience</h3>
+        </div>
+      </div>
+    </div>
+    <div class="kontainer">
+      <div class="full-width flex flex-dir-col">
+        <div style="width:100%; height: 350px;">
+          <div class="tourphoto">
+            <img src="./asset/tourphoto1.jpg" style="max-width: 100%;" alt="photo1"/>
+            <h6><i>Geisha</i> District, Kyoto Prefecture</h6>
+          </div>
+          <div class="tourphoto">
+            <img src="./asset/tourphoto2.jpg" style="max-width: 100%;" alt="photo2"/>
+            <h6>Shibuya Crossing, Shibuya, Tokyo</h6>
+          </div>
+          <div class="tourphoto">
+            <img src="./asset/tourphoto3.png" style="max-width: 100%;" alt="photo3"/>
+            <h6>Biwa Lake, Shiga Prefecture</h6>
+          </div>
+        </div>
+        <div>
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td><div class="full-width flex justify-content-center">
+                  <button id="slider_button" onclick="plusDivs(-1)">
+                    <b>Previous</b></button>
+                </div></td>
+
+                <td><div class="full-width flex justify content-center">
+                  <button id="slider_button" onclick="plusDivs(1)">
+                    <b>Next</b></button>
+                </div></td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td style="width:12%"><img src="./asset/SM.jpg" class="tphoto"/></td>
+                <td style="width:88%" class="testimony_profile"><b>Suzushi Masakushi</b> - Customer</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="testimony">"I'm happy to say I had a extravagant experience with Immersive Travel. From the place of interests, the foods, and the general tour activities were just the best. Not to mention the tour leader was very polite and fun to be around. I will be looking forward the next time I have some time off to travel again with Immerse Travel."</p>
+        </div>
+        <div class="spoi">
+          <h2>Special point of interests</h2>
+        </div>
+        <div class="kontainer">
+          <div class="full-width flex justify-content-center">
+            <table width="100%" class="spoi_content">
+              <tbody>
+                <tr>
+                  <td style="width:5%"><b>1.</b></td>
+                  <td style="width:95%">See our testimony above!</td>
+                </tr>
+                <tr>
+                  <td style="width:5%"><b>2.</b></td>
+                  <td style="width:95%">Check our ongoing packages below!</td>
+                </tr>
+                <tr>
+                  <td style="width:5%"><b>3.</td>
+                  <td style="width:95%">Contact us if you any more question!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="full-width flex justify-content-center">
+        <form name="Inquiry" onsubmit="return FormValidation()">
+          <div class="card">
+            <div class="card_title">
+              <h2>Contact Us!</h2>
+              <p id="card_text">Let us know if you have any more questions!</p>
+            </div>
+            <div class="card_body general_text" id="card_text">
+              <label for="name">Name : </label>
+              <br>
+              <input placeholder="Name" name="name" type="text" size="30" />
+              <br>
+              <br>
+              <label for="email">Email : </label>
+              <br>
+              <input placeholder="Email" name="email" type="text" size="30" />
+              <br>
+              <br>
+              <label for="category">Category : </label>
+              <br>
+              <select>
+                <option selected>Unspecified </option>
+                <option>Packages </option>
+                <option>Promos </option>
+                <option>Payments </option>
+              </select>
+              <br>
+              <br>
+              <label for="question">Your Question : </label>
+              <br>
+              <textarea placeholder="Insert your questions here" name="question" type="text" rows="9" cols="39"></textarea>
+              <br>
+              <br>
+              <div class="full-width flex align-item-center justify-content-center">
+                <button type="submit" id="question_button">
+                  <b>Submit</b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="package" class="kontainer">
+      <div class="full-width flex align-item-center justify-content-center">
+        <div class="subtitle2">
+          <h1>Our Packages</h1>
+        </div>
+      </div>
+    </div>
+    <div class="kontainer">
+      <div class="full-width flex justify-content-center">
+        <table class="package_table">
+          <tbody>
+            <tr>
+              <td style="vertical-align:top;"><img src="./asset/package1.jpg" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Otaku's Dream</b></h2>
+                <p class="general_text">For those who would like to embrace the Japanese entertainment industry culture, you will be ensured to receive the best experience of being an <i>otaku!</i></p></td>
+              <td style="vertical-align:top;"><img src="./asset/package2.jpe" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Culinary Chase</b></h2>
+                <p class="general_text">For those who wanted to fulfill their culinary cravings, you will taste myriad of Japanese foods which ends with a belly full of happiness!</p></td>
+              <td style="vertical-align:top;"><img src="./asset/package3.jpg" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Astonishing Culture</b></h2>
+                <p class="general_text">For those who would like to know more about Japanese culture, you will be visiting many interesting places from traditional to modern place of interests!</p></td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;"><img src="./asset/package4.jpg" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Pilgrim's Journey</b></h2>
+                <p class="general_text">For those who wanted to explore about religions in Japan such as Shintoism. you will be visiting various religious place of interests and learn the history behind it!</p></td>
+              <td style="vertical-align:top;"><img src="./asset/package5.jpg" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Curious Melody</b></h2>
+                <p class="general_text">For those who wanted to dive deeper into Japanese songs. you will be visiting musical place of interests and also the chance of trying various musical instruments!</p></td>
+              <td style="vertical-align:top;"><img src="./asset/package6.png" class="tphoto"></td>
+              <td style="vertical-align:top;" width="25%">
+                <h2><b>Coming Soon!</b></h2>
+                <p class="general_text">More packages to come in the future!</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="contact" class="kontainer">
+      <div class="full-width flex flex-dir-col align-item-center">
+        <div class="subtitle2" style="width: fit-content;">
+          <h1>Contact Us!</h1>
+        </div>
+        <div>
+          <h3 class="motto">If you would like to know more about us, feel free to contact us through these methods below or by filling the inquiry form above!</h3>
+        </div>
+          <div class="kontainer">
+            <div class="full-width flex justify-content-center">
+              <table class="contact_box general_text">
+                <tbody>
+                  <tr>
+                    <td style="width:12%"><img src="./asset/icon1.png" class="iphoto"></td>
+                    <td style="width:88%; vertical-align:top;">(+62) 496-851-1894</td>
+                    <td rowspan="4">
+                      <div class="full-width flex align-item-center justify-content-center">
+                        <a href="#" id="contact_button" onclick="alert('*You went into Contact Us page scene goes here*')">
+                          <b>Call Us!</b></a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width:12%"><img src="./asset/icon2.png" class="iphoto"></td>
+                    <td style="width:88%; vertical-align:top;">Jl. Real Fake no. 147, Jakarta Barat, Indonesia</td>
+                  </tr>
+                  <tr>
+                    <td style="width:12%"><img src="./asset/icon3.png" class="iphoto"></td>
+                    <td style="width:88%; vertical-align:top;">really_fake0@immerse.com</td>
+                  </tr>
+                  <tr>
+                    <td style="width:12%"><img src="./asset/icon4.png" class="iphoto"></td>
+                    <td style="width:88%; vertical-align:top;">@Immerse_Travels</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="contact" class="kontainer">
+      <div class="full-width flex flex-dir-col align-item-center">
+      </div>
+    </div>
+    <div id="contact" class="kontainer">
+      <div class="full-width flex align-item-center justify-content-center">
+        <div class="subtitle3">
+          <h1 class="flex justify-content-center">Immerse Travel</h1>
+          <table>
+            <tbody>
+              <tr>
+                <div class="bottom-menu flex align-item-center justify-content-center">
+                  <div>
+                    <a href="#" class="menu bottom_links" onclick="alert('*You Went to About Us page scene goes here*')"><b>About Us</b></a>
+                    <a href="#" class="menu bottom_links" onclick="alert('*You Went to Privacy Policy page scene goes here*')"><b>Privacy Policy</b></a>
+                    <a href="#" class="menu bottom_links" onclick="alert('*You Went to Terms of Service page scene goes here*')"><b>Terms of Service</b></a>
+                  </div>
+                </div>
+              </tr>
+              <tr>
+                <p class="flex justify-content-center">@2023</p>
+              </tr>
+            </tbody>
+          </table>
+        </div>  
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var tourphoto = document.getElementsByClassName("tourphoto");
+
+        if (n > tourphoto.length) {
+          slideIndex = 1;
+        }
+        else if (n < 1) 
+        {
+          slideIndex = tourphoto.length
+        };
+
+        for(var i = 0; i < tourphoto.length;i++) 
+        {
+          tourphoto[i].style.display = "none";
+        } 
+
+        tourphoto[slideIndex - 1].style.display = "block";
+      }
+
+      setInterval(() => {
+        plusDivs(1); 
+      }, 6000)
+
+    </script>
+
+    <script>
+      function FormValidation() {
+        var name = document.forms["Inquiry"]["name"].value;
+        var email = document.forms["Inquiry"]["email"].value;
+        var question = document.forms["Inquiry"]["question"].value;
+
+        if (name == "" || email == "" || question == "") {
+        alert("Please completely fill out the form");
+        return false;
+        } else {
+        alert("Your inquiry has been submitted"); }
+      }
+    </script>
+  </body>
+</html>
+
+<!--This Code was made by Arya Yudha Prakasa -->

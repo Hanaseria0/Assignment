@@ -1,0 +1,298 @@
+body {
+    width: 80%;
+    margin:20px auto;
+    font-size: 14px; 
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+select {
+    width: 175px
+}
+
+textarea {
+    resize:none;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom:10px;
+}
+
+h6 {
+    text-align: center;
+}
+
+.card {
+    background-color: gainsboro;
+    border-radius:25px;
+    width: 350px;
+    height: 612px;
+}
+
+.card_title {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.card_body {
+    padding-left: 20px;
+}
+
+#card_text {
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+}
+
+#question_button {
+    background-color:rgb(165, 122, 206);
+    border-color: black;
+    font-family:'Rokkitt', serif;
+    font-size: 17px;
+    border: solid;
+    color: black;
+    padding: 14px 40px;
+    border-radius: 12px;
+}
+
+#contact_button {
+    font-family: 'Pacifico', cursive;
+    background-color:black;
+    border-radius: 12px;
+    border:solid gainsboro;
+    font-size: 17px;
+    color:rgb(165, 122, 206);
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+
+#slider_button {
+    font-family: 'Pacifico', cursive;
+    background-color:black;
+    border-radius: 12px;
+    border:solid gainsboro;
+    font-size: 12px;
+    color:rgb(165, 122, 206);
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.menu {
+    font-family: 'Rokkitt', serif;
+    font-size: 18px;
+    text-decoration: none;
+    color:black;
+}
+
+.logo {
+    width: 250px;
+    height: 75px;
+}
+
+.gphoto {
+    width: 516px;
+    height: 320px; 
+    border-radius:10px;
+}
+
+.tphoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.iphoto {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.slider {
+    margin-left: 30px;
+}
+
+.testimony_profile {
+    background-color: rgb(165, 122, 206);
+    border: solid black;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    border-radius: 35px;
+    padding: 3px 0px 3px 15px
+}
+.testimony {
+    text-align: justify;
+    font-family: 'Tinos', serif;
+    font-size: 16px;
+    background-color: gainsboro;
+    border-radius:25px;
+    padding: 10px 20px 10px 20px;
+}
+
+.spoi {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background-color: rgb(165, 122, 206);
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 35px;
+    padding: 3px 0px 3px 0px;
+
+}
+
+.spoi_content {
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    background-color: gainsboro;
+    margin-top: 15px;
+    padding: 3px 0px 3px 20px;
+    border-radius: 10px;
+}
+
+.subtitle {
+    background-color:rgb(165, 122, 206);
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.subtitle2 {
+    background-color:rgb(165, 122, 206);
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 25px;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding: 0px 15px 0px 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.subtitle3 {
+    font-family: 'Pacifico', cursive;
+    margin: 100px 0px 20px;
+}
+
+.general_text {
+    font-family: 'Tinos', serif;
+    font-size: 16px;
+}
+
+.contact_box {
+    background-color:rgb(165, 122, 206);
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+}
+
+.motto {
+    font-family: 'Rokkitt', serif;
+    font-size: 18px;
+    border-bottom:3px solid rgb(165, 122, 206);
+}
+
+.package_table {
+    background-color: rgb(165, 122, 206);
+    border-radius:25px;
+    border: solid;
+    padding: 25px 25px 0px 25px;
+}
+.package {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+
+.bottom_links {
+    padding:5px 50px 5px 50px;
+}
+
+.kontainer {
+    display: flex;
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.menu-flex {
+    display: flex; 
+    align-items: center; 
+    align-content: stretch; 
+    flex-direction: row; 
+}
+
+.flex {
+    display: flex;
+}
+
+.flexbox {
+    display: flexbox;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.menu-nav {
+    background-color: rgb(165, 122, 206);
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+}
+
+.menu-nav-first {
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.menu-nav-last {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.menu-nav:hover {
+    background-color:gainsboro;
+}
+
+.menu-nav a:hover {
+    color:rgb(165, 122, 206);
+}
+
+#question_button:hover {
+    background-color: gainsboro;
+    border-color: black;
+    color:rgb(165, 122, 206);
+}
+
+#contact_button:hover {
+    background-color:rgb(165, 122, 206);
+    border-color:black;
+    color:gainsboro;
+}
+
+#slider_button:hover {
+    background-color:rgb(165, 122, 206);
+    border-color:black;
+    color:gainsboro;
+}
+
+.bottom-menu a:hover {
+    color:rgb(165, 122, 206);
+}
